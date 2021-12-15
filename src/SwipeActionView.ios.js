@@ -18,7 +18,7 @@ export class SwipeActionView extends Component {
     this.state = this.stateFromProps(props);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this.setState(this.stateFromProps(nextProps));
   }
 
